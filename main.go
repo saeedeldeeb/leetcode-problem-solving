@@ -22,8 +22,20 @@ func main() {
 	*/
 
 	// 14. Longest Common Prefix
+	/**
 	fmt.Println(longestCommonPrefix([]string{"flower", "flow", "flight"}))
 	fmt.Println(longestCommonPrefix([]string{"dog", "racecar", "car"}))
 	fmt.Println(longestCommonPrefix([]string{"ab", "a"}))
 	fmt.Println(longestCommonPrefix([]string{"a"}))
+	*/
+
+	// 20. Valid Parentheses
+	fmt.Println(isValid("()"))
+	fmt.Println(isValid("()[]{}"))
+	fmt.Println(isValid("(]"))
+	fmt.Println(isValid("([)]"))
+	fmt.Println(isValid("{[]}"))
+	fmt.Println(isValid("]"))
+	fmt.Println(isValid("["))
+	fmt.Println(isValid(""))
 }
