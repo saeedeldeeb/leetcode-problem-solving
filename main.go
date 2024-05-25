@@ -30,6 +30,7 @@ func main() {
 	*/
 
 	// 20. Valid Parentheses
+	/**
 	fmt.Println(isValid("()"))
 	fmt.Println(isValid("()[]{}"))
 	fmt.Println(isValid("(]"))
@@ -38,4 +39,32 @@ func main() {
 	fmt.Println(isValid("]"))
 	fmt.Println(isValid("["))
 	fmt.Println(isValid(""))
+	*/
+
+	// 21. Merge Two Sorted Lists
+	l1 := &ListNode{Val: 1}
+	l1.Next = &ListNode{Val: 2}
+	l1.Next.Next = &ListNode{Val: 4}
+	l2 := &ListNode{Val: 1}
+	l2.Next = &ListNode{Val: 3}
+	l2.Next.Next = &ListNode{Val: 4}
+	h := mergeTwoLists(l1, l2)
+	for {
+		fmt.Println(h.Val)
+		if h.Next == nil {
+			break
+		}
+		h = h.Next
+	}
+
+	l1 = &ListNode{}
+	l2 = &ListNode{}
+	h = mergeTwoLists(l1, l2)
+	for {
+		fmt.Println(h.Val)
+		if h.Next == nil {
+			break
+		}
+		h = h.Next
+	}
 }
