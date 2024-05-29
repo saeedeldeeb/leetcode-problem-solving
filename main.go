@@ -42,6 +42,7 @@ func main() {
 	*/
 
 	// 21. Merge Two Sorted Lists
+	/**
 	l1 := &ListNode{Val: 1}
 	l1.Next = &ListNode{Val: 2}
 	l1.Next.Next = &ListNode{Val: 4}
@@ -67,4 +68,13 @@ func main() {
 		}
 		h = h.Next
 	}
+	*/
+
+	// 26. Remove Duplicates from Sorted Array
+	nums := []int{1, 1, 2}
+	fmt.Println(removeDuplicates(nums))
+	fmt.Println("array: ", nums)
+	nums = []int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}
+	fmt.Println(removeDuplicates(nums))
+	fmt.Println("array: ", nums)
 }
